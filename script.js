@@ -18,3 +18,4 @@ document.getElementById("scores").innerHTML = scoreHtml;
 window.addEventListener("load",function (){new Clipboard('#copy');
 if(location.hash.length > 1){load(location.hash.slice(1))}else{document.getElementById("learn").setAttribute("hidden","hidden");document.getElementById("about").removeAttribute("hidden")}
 })
+window.addEventListener("hashchange",function (){if(location.hash.length > 1){load(location.hash.slice(1))}});

@@ -1,3 +1,6 @@
 html, body {font-family: Arial}
 a {color: #ee8800}
 button {background: #ee8800;color:white;padding:5px;border:none;margin:5px}
+span {margin-left:5px}
+li {padding: 10px}
+#loading {position: fixed;top: 45%;left: 45%;width:10%;height:10%;color:white;background-color:#ee8800;padding:20px}

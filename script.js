@@ -15,6 +15,6 @@ scoreHtml += "<li><a href='https://scratch.mit.edu/users/" + scores[i].user + "'
 document.getElementById("scores").innerHTML = scoreHtml;
 })
 }
-window.addEventListener("load",function (){
+window.addEventListener("load",function (){new Clipboard('#copy');
 if(location.hash.length > 1){load(location.hash.slice(1))}
 })

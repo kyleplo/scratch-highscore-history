@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+<head><title>Scratch Highscore History</title></head>
+<body>
+<h1>Scratch Highscore History</h1>
+<p>Created by <a href="https://scratch.mit.edu/users/kyleplo">@kyleplo</a></p>
+<a href="#" onclick="document.getElementById('about').removeAttribute('hidden')" id="learn">Learn more and use with your own projects</a>
+<div id="about" hidden><button onclick="document.getElementById('link').removeAttribute('hidden')">Get a history link for your project</button>
+<div id="link" hidden>
+<h3>Get a link</h3>
+<p>Project URL: <input type="text" id="url" onchange="document.getElementById('copy').setAttribute('data-clipboard-text',trimProjectUrl(this.value));document.getElementById('direct').setAttribute('href',trimProjectUrl(this.value));"></p>
+<button data-clipboard-text="https://kyleplo.github.io/scratch-highscore-history" id="copy">Copy URL</button> 
+<a href="https://kyleplo.github.io/scratch-highscore-history" id="direct"><button>Go there directly</button></a>
+</div>
+<p><a href="https://github.com/kyleplo/scratch-highscore-history">Source code on Github</a></p><p>Uses timeago.js and clipboard.js</p>
+</div>
+<ol id="scores"></ol>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
